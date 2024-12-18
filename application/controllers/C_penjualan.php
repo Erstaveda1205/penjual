@@ -72,5 +72,8 @@ class C_penjualan extends CI_Controller
         $this->M_crud->tambah('penjualan', $field);
         redirect(base_url() . 'C_penjualan');
     }
+	function detail($id) {
+		redirect(base_url() . 'C_detail_pesanan');
+	}
 }
 ?>
